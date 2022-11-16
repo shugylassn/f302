@@ -35,10 +35,10 @@ while True:
         num2 = float(input("Enter second number: "))
 
         if choice == '1':
-            print(num1, "+", num2, "=", add(num1, num2))
+            print(num1, "+", num2, "=", addition(num1, num2))
 
         elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2))
+            print(num1, "-", num2, "=", subtraction(num1, num2))
 
         elif choice == '3':
             print(num1, "*", num2, "=", multiply(num1, num2))
@@ -47,7 +47,7 @@ while True:
             print(num1, "/", num2, "=", divide(num1, num2))
         
         # check if user wants another calculation
-        # break the while loop if answer is no
+        # break the while loop if answer is yes
         next_calculation = input("Let's do next calculation? (yes/no): ")
         if next_calculation == "no":
           break
